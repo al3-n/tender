@@ -1,0 +1,17 @@
+#RewriteEngine on
+#RewriteCond $1 !^public/
+#RewriteRule ^(.*)$ public/index.php?url=$1 [L]
+#
+#<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#        Options -MultiViews
+#    </IfModule>
+#
+#    RewriteEngine On
+#    RewriteRule ^(.*) public/$1 [L]
+#
+#
+#</IfModule>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !index.php
+RewriteRule ^(.*)$ public/$1 [L]

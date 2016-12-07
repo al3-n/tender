@@ -1,0 +1,156 @@
+$hoverBackgroundColor: #049d5f;
+
+body {
+  .danger-message, .success-message {
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    display: block;
+  }
+  .success-message {
+    background-color: #dff0d8;
+  }
+  .danger-message {
+    background-color: #f2dede;
+  }
+  .btn-default {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .btn-green {
+    background-color: #007143;
+    color: #fff;
+  }
+  .btn-green:hover {
+    background-color: $hoverBackgroundColor;
+    color: #fff;
+  }
+  .navbar-nav {
+    li:hover {
+      background-color: $hoverBackgroundColor;
+      a {
+        color: #fff;
+        background-color: $hoverBackgroundColor;
+      }
+      a:hover {
+        color: #fff;
+        background-color: $hoverBackgroundColor;
+      }
+    }
+    .dropdown:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+    .dropdown-menu {
+      background-color: $hoverBackgroundColor;
+      color: #fff;
+      width: 100%;
+      a:focus, a:hover {
+        background-color: #007143 !important;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  form {
+    .form-control {
+      height: 30px;
+      border-radius: 3px;
+    }
+  }
+  .right_menu ul li img {
+    float: left;
+  }
+  .right_menu ul li {
+    cursor: pointer;
+    list-style-type: none;
+    background-image: url('../images/arr.png');
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-color: #dfdfdf;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 20px;
+    box-shadow: -6px 2px 10px rgba(247, 247, 247, 0.6);
+  }
+  .right_menu ul li:hover a {
+    text-decoration: underline;
+  }
+  .right_menu ul li::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .right_menu ul li a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    max-width: 80%;
+    color: #000;
+    z-index: 9;
+    transform: translate(0px, -50%);
+  }
+  .right_menu ul li a:hover {
+    text-decoration: underline;
+  }
+  .tabs label span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+  .right_menu ul li.active {
+    background-color: #fff;
+    z-index: 3;
+    box-shadow: -6px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .techno-content {
+    margin: 0 0 0 -15px;
+    padding: 12px;
+    box-shadow: 1px 0 10px rgba(204, 204, 204, 0.8);
+  }
+  #tenders-list {
+    border: 2px solid #1b4b6a;
+    width: 100%;
+    margin-top: 20px;
+    .thead td {
+      text-align: center;
+      border: 2px solid #1b4b6a;
+      padding: 12px;
+      color: #008d68;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .tbody td {
+      text-align: center;
+      border: 2px solid #1b4b6a;
+      padding: 12px;
+    }
+  }
+  #top-area {
+    margin: 10px;
+  }
+  #bottom-area {
+    margin: 10px;
+  }
+  #tenders {
+    width: 100%;
+    tr, td {
+      text-align: center;
+      padding: 12px;
+    }
+    .first {
+      width: 25%;
+    }
+  }
+
+  .panel-heading.active {
+    background-color: $hoverBackgroundColor;
+    color: #fff;
+  }
+  .winner-info {
+    float: right;
+  }
+}
